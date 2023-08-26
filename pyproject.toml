@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "convmixer"
+version = "0.1.0"
+description = ""
+authors = ["tocom <tcom242242@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+# main = "convmixer.cli:main"
+convmixer = "convmixer.cli:run"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jupyterlab = "^4.0.5"
+
+[tool.poetry.group.cpu.dependencies]
+torch = "^2.0.1"
+torchvision = "^0.15.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
