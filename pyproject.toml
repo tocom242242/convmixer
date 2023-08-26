@@ -6,7 +6,6 @@ authors = ["tocom <tcom242242@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-# main = "convmixer.cli:main"
 convmixer = "convmixer.cli:run"
 
 [tool.poetry.dependencies]
